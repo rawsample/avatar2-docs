@@ -1,0 +1,936 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>avatar2.targets package &mdash; avatar² 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="avatar2.protocols package" href="avatar2.protocols.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> avatar²
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">avatar2</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="avatar2.html">avatar2 package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="avatar2.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="avatar2.archs.html">avatar2.archs package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="avatar2.peripherals.html">avatar2.peripherals package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="avatar2.plugins.html">avatar2.plugins package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="avatar2.protocols.html">avatar2.protocols package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">avatar2.targets package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="avatar2.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="avatar2.html#module-avatar2.avatar2">avatar2.avatar2 module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="avatar2.html#module-avatar2.memory_range">avatar2.memory_range module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="avatar2.html#module-avatar2.message">avatar2.message module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="avatar2.html#module-avatar2.watchmen">avatar2.watchmen module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="avatar2.html#module-avatar2">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">avatar²</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">avatar2</a> &raquo;</li>
+        
+          <li><a href="avatar2.html">avatar2 package</a> &raquo;</li>
+        
+      <li>avatar2.targets package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/avatar2.targets.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="avatar2-targets-package">
+<h1>avatar2.targets package<a class="headerlink" href="#avatar2-targets-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-avatar2.targets.dummy_target">
+<span id="avatar2-targets-dummy-target-module"></span><h2>avatar2.targets.dummy_target module<a class="headerlink" href="#module-avatar2.targets.dummy_target" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.targets.dummy_target.DummyTarget">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.targets.dummy_target.</span></span><span class="sig-name descname"><span class="pre">DummyTarget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">avatar</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.dummy_target.DummyTarget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#avatar2.targets.target.Target" title="avatar2.targets.target.Target"><code class="xref py py-class docutils literal notranslate"><span class="pre">avatar2.targets.target.Target</span></code></a></p>
+<p>This is a Dummy target that can be used for testing purposes.
+It simulates a device that randomly reads from forwarded memory ranges
+and triggers breakpoints.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.dummy_target.DummyTarget.cont">
+<span class="sig-name descname"><span class="pre">cont</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.dummy_target.DummyTarget.cont" title="Permalink to this definition">¶</a></dt>
+<dd><p>Continues the execution of the target
+:param blocking: if True, block until the target is RUNNING</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.dummy_target.DummyTarget.get_status">
+<span class="sig-name descname"><span class="pre">get_status</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.dummy_target.DummyTarget.get_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns useful information about the target as a dict.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.dummy_target.DummyTarget.init">
+<span class="sig-name descname"><span class="pre">init</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.dummy_target.DummyTarget.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes the target to start the analyses</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.dummy_target.DummyTarget.read_memory">
+<span class="sig-name descname"><span class="pre">read_memory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.dummy_target.DummyTarget.read_memory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reading from memory of the target</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>address</strong> – The address to read from</p></li>
+<li><p><strong>size</strong> – The size of a read word</p></li>
+<li><p><strong>num_words</strong> – The amount of words to read (default: 1)</p></li>
+<li><p><strong>raw</strong> – Whether the read memory is returned unprocessed</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The read memory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.dummy_target.DummyTarget.remove_breakpoint">
+<span class="sig-name descname"><span class="pre">remove_breakpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">breakpoint</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.dummy_target.DummyTarget.remove_breakpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes a breakpoint</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.dummy_target.DummyTarget.send_response">
+<span class="sig-name descname"><span class="pre">send_response</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">success</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.dummy_target.DummyTarget.send_response" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.dummy_target.DummyTarget.set_breakpoint">
+<span class="sig-name descname"><span class="pre">set_breakpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hardware</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temporary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thread</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.dummy_target.DummyTarget.set_breakpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts a breakpoint</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hardware</strong> (<em>bool</em>) – Hardware breakpoint</p></li>
+<li><p><strong>tempory</strong> (<em>bool</em>) – Tempory breakpoint</p></li>
+<li><p><strong>regex</strong> (<em>str</em>) – If set, inserts breakpoints matching the regex</p></li>
+<li><p><strong>condition</strong> (<em>str</em>) – If set, inserts a breakpoint with the condition</p></li>
+<li><p><strong>ignore_count</strong> (<em>int</em>) – Amount of times the bp should be ignored</p></li>
+<li><p><strong>thread</strong> (<em>int</em>) – Threadno in which this breakpoints should be added</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.dummy_target.DummyTarget.shutdown">
+<span class="sig-name descname"><span class="pre">shutdown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.dummy_target.DummyTarget.shutdown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shutdowns the target</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.dummy_target.DummyTarget.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.dummy_target.DummyTarget.stop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.dummy_target.DummyTarget.write_memory">
+<span class="sig-name descname"><span class="pre">write_memory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">addr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.dummy_target.DummyTarget.write_memory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writing to memory of the target</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>address</strong> – The address from where the memory-write should 
+start</p></li>
+<li><p><strong>size</strong> – The size of the memory write</p></li>
+<li><p><strong>value</strong> – The actual value written to memory</p></li>
+<li><p><strong>num_words</strong> – The amount of words to read</p></li>
+<li><p><strong>raw</strong> – Specifies whether to write in raw or word mode</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True on success else False</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-avatar2.targets.gdb_target">
+<span id="avatar2-targets-gdb-target-module"></span><h2>avatar2.targets.gdb_target module<a class="headerlink" href="#module-avatar2.targets.gdb_target" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.targets.gdb_target.GDBTarget">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.targets.gdb_target.</span></span><span class="sig-name descname"><span class="pre">GDBTarget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">avatar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_executable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_additional_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_ip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'127.0.0.1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3333</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_serial_device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/dev/ttyACM0'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_serial_baud_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">38400</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_serial_parity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'none'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_verbose_mi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enable_init_files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">local_binary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arguments</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.gdb_target.GDBTarget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#avatar2.targets.target.Target" title="avatar2.targets.target.Target"><code class="xref py py-class docutils literal notranslate"><span class="pre">avatar2.targets.target.Target</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.gdb_target.GDBTarget.cont">
+<span class="sig-name descname"><span class="pre">cont</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blocking</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.gdb_target.GDBTarget.cont" title="Permalink to this definition">¶</a></dt>
+<dd><p>Continues the execution of the target
+:param blocking: if True, block until the target is RUNNING</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.gdb_target.GDBTarget.disable_aslr">
+<span class="sig-name descname"><span class="pre">disable_aslr</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.gdb_target.GDBTarget.disable_aslr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.gdb_target.GDBTarget.enable_aslr">
+<span class="sig-name descname"><span class="pre">enable_aslr</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.gdb_target.GDBTarget.enable_aslr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.gdb_target.GDBTarget.init">
+<span class="sig-name descname"><span class="pre">init</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.gdb_target.GDBTarget.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes the target to start the analyses</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.gdb_target.GDBTarget.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blocking</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.gdb_target.GDBTarget.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-avatar2.targets.openocd_target">
+<span id="avatar2-targets-openocd-target-module"></span><h2>avatar2.targets.openocd_target module<a class="headerlink" href="#module-avatar2.targets.openocd_target" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.targets.openocd_target.OpenOCDTarget">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.targets.openocd_target.</span></span><span class="sig-name descname"><span class="pre">OpenOCDTarget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">avatar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">executable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">openocd_script</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">additional_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tcl_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6666</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_executable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_additional_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3333</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.openocd_target.OpenOCDTarget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#avatar2.targets.target.Target" title="avatar2.targets.target.Target"><code class="xref py py-class docutils literal notranslate"><span class="pre">avatar2.targets.target.Target</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.openocd_target.OpenOCDTarget.init">
+<span class="sig-name descname"><span class="pre">init</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.openocd_target.OpenOCDTarget.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes the target to start the analyses</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-avatar2.targets.panda_target">
+<span id="avatar2-targets-panda-target-module"></span><h2>avatar2.targets.panda_target module<a class="headerlink" href="#module-avatar2.targets.panda_target" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.targets.panda_target.PandaTarget">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.targets.panda_target.</span></span><span class="sig-name descname"><span class="pre">PandaTarget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.panda_target.PandaTarget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#avatar2.targets.qemu_target.QemuTarget" title="avatar2.targets.qemu_target.QemuTarget"><code class="xref py py-class docutils literal notranslate"><span class="pre">avatar2.targets.qemu_target.QemuTarget</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.panda_target.PandaTarget.begin_record">
+<span class="sig-name descname"><span class="pre">begin_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">record_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.panda_target.PandaTarget.begin_record" title="Permalink to this definition">¶</a></dt>
+<dd><p>Starts recording the execution in PANDA</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>record_name</strong> – The name of the record file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.panda_target.PandaTarget.begin_replay">
+<span class="sig-name descname"><span class="pre">begin_replay</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">replay_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cont</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.panda_target.PandaTarget.begin_replay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Starts replaying a captured replay</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>replay_name</strong> – The name of the file to be replayed</p></li>
+<li><p><strong>cont</strong> – Whether execution shall automatically be resumed (default True)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.panda_target.PandaTarget.end_record">
+<span class="sig-name descname"><span class="pre">end_record</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.panda_target.PandaTarget.end_record" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stops recording the execution in PANDA</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.panda_target.PandaTarget.end_replay">
+<span class="sig-name descname"><span class="pre">end_replay</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.panda_target.PandaTarget.end_replay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stops a current ongoing replay</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.panda_target.PandaTarget.list_plugins">
+<span class="sig-name descname"><span class="pre">list_plugins</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.panda_target.PandaTarget.list_plugins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lists the laoded PANDA plugins</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a list with the loaded panda_plugins</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.panda_target.PandaTarget.load_plugin">
+<span class="sig-name descname"><span class="pre">load_plugin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plugin_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plugin_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.panda_target.PandaTarget.load_plugin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads a PANDA plugin</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>plugin_name</strong> – The name of the plugin to be loaded</p></li>
+<li><p><strong>plugin_args</strong> – Arguments to be passed to the plugin,
+aseperated by commas</p></li>
+<li><p><strong>file_name</strong> – Absolute path to the plugin shared object file,
+in case that the default one should not be used</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.panda_target.PandaTarget.unload_plugin">
+<span class="sig-name descname"><span class="pre">unload_plugin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plugin_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.panda_target.PandaTarget.unload_plugin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unloads a PANDA plugin</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>plugin_name</strong> – The name of the plugin to be unloaded</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True if the requested plugin was present</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-avatar2.targets.qemu_target">
+<span id="avatar2-targets-qemu-target-module"></span><h2>avatar2.targets.qemu_target module<a class="headerlink" href="#module-avatar2.targets.qemu_target" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.targets.qemu_target.QemuTarget">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.targets.qemu_target.</span></span><span class="sig-name descname"><span class="pre">QemuTarget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">avatar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">executable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cpu_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">firmware</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_executable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3333</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">additional_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_additional_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdb_verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qmp_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3334</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entry_address</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_items</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">system_clock_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.qemu_target.QemuTarget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#avatar2.targets.target.Target" title="avatar2.targets.target.Target"><code class="xref py py-class docutils literal notranslate"><span class="pre">avatar2.targets.target.Target</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.qemu_target.QemuTarget.assemble_cmd_line">
+<span class="sig-name descname"><span class="pre">assemble_cmd_line</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.qemu_target.QemuTarget.assemble_cmd_line" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.qemu_target.QemuTarget.generate_qemu_config">
+<span class="sig-name descname"><span class="pre">generate_qemu_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.qemu_target.QemuTarget.generate_qemu_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates the configuration passed to avatar-qemus configurable machine</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.qemu_target.QemuTarget.init">
+<span class="sig-name descname"><span class="pre">init</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cmd_line</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.qemu_target.QemuTarget.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Spawns a Qemu process and connects to it</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.qemu_target.QemuTarget.shutdown">
+<span class="sig-name descname"><span class="pre">shutdown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.qemu_target.QemuTarget.shutdown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shutdowns the target</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-avatar2.targets.target">
+<span id="avatar2-targets-target-module"></span><h2>avatar2.targets.target module<a class="headerlink" href="#module-avatar2.targets.target" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.targets.target.</span></span><span class="sig-name descname"><span class="pre">Target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">avatar</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Avatar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The Target object is one of Avatars core concept, as Avatar orchestrate 
+different targets.
+While the generic target has no implementation, it provides an insight over 
+all the functions a Target MUST implement</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.bp">
+<span class="sig-name descname"><span class="pre">bp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hardware</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temporary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thread</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.bp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts a breakpoint</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hardware</strong> (<em>bool</em>) – Hardware breakpoint</p></li>
+<li><p><strong>tempory</strong> (<em>bool</em>) – Tempory breakpoint</p></li>
+<li><p><strong>regex</strong> (<em>str</em>) – If set, inserts breakpoints matching the regex</p></li>
+<li><p><strong>condition</strong> (<em>str</em>) – If set, inserts a breakpoint with the condition</p></li>
+<li><p><strong>ignore_count</strong> (<em>int</em>) – Amount of times the bp should be ignored</p></li>
+<li><p><strong>thread</strong> (<em>int</em>) – Threadno in which this breakpoints should be added</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.cont">
+<span class="sig-name descname"><span class="pre">cont</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blocking</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.cont" title="Permalink to this definition">¶</a></dt>
+<dd><p>Continues the execution of the target
+:param blocking: if True, block until the target is RUNNING</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.dictify">
+<span class="sig-name descname"><span class="pre">dictify</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.dictify" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the memory range as <em>printable</em> dictionary for the config</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.download">
+<span class="sig-name descname"><span class="pre">download</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.download" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download the loaded code to the Target</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>True on success else False</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.get_status">
+<span class="sig-name descname"><span class="pre">get_status</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.get_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns useful information about the target as a dict.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.get_symbol">
+<span class="sig-name descname"><span class="pre">get_symbol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.get_symbol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the address of a symbol</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>symbol</strong> – The name of a symbol whose address is wanted</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(True, Address) on success else False</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.init">
+<span class="sig-name descname"><span class="pre">init</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes the target to start the analyses</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.read_memory">
+<span class="sig-name descname"><span class="pre">read_memory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.read_memory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reading from memory of the target</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>address</strong> – The address to read from</p></li>
+<li><p><strong>size</strong> – The size of a read word</p></li>
+<li><p><strong>num_words</strong> – The amount of words to read (default: 1)</p></li>
+<li><p><strong>raw</strong> – Whether the read memory is returned unprocessed</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The read memory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.read_register">
+<span class="sig-name descname"><span class="pre">read_register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">register</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.read_register" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reading a register from the target</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>register</strong> – The name of the register</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The actual value read from the register</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.remove_breakpoint">
+<span class="sig-name descname"><span class="pre">remove_breakpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bkptno</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.remove_breakpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes a breakpoint</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.rm">
+<span class="sig-name descname"><span class="pre">rm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.rm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reading from memory of the target</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>address</strong> – The address to read from</p></li>
+<li><p><strong>size</strong> – The size of a read word</p></li>
+<li><p><strong>num_words</strong> – The amount of words to read (default: 1)</p></li>
+<li><p><strong>raw</strong> – Whether the read memory is returned unprocessed</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The read memory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.rr">
+<span class="sig-name descname"><span class="pre">rr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">register</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.rr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reading a register from the target</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>register</strong> – The name of the register</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The actual value read from the register</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.set_breakpoint">
+<span class="sig-name descname"><span class="pre">set_breakpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hardware</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temporary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thread</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.set_breakpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts a breakpoint</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hardware</strong> (<em>bool</em>) – Hardware breakpoint</p></li>
+<li><p><strong>tempory</strong> (<em>bool</em>) – Tempory breakpoint</p></li>
+<li><p><strong>regex</strong> (<em>str</em>) – If set, inserts breakpoints matching the regex</p></li>
+<li><p><strong>condition</strong> (<em>str</em>) – If set, inserts a breakpoint with the condition</p></li>
+<li><p><strong>ignore_count</strong> (<em>int</em>) – Amount of times the bp should be ignored</p></li>
+<li><p><strong>thread</strong> (<em>int</em>) – Threadno in which this breakpoints should be added</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.set_file">
+<span class="sig-name descname"><span class="pre">set_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.set_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load an ELF file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>elf</strong> – ELF file to load</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True on success else False</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.set_watchpoint">
+<span class="sig-name descname"><span class="pre">set_watchpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">write</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.set_watchpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts a watchpoint</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>variable</strong> – The name of a variable or an address to watch</p></li>
+<li><p><strong>write</strong> (<em>bool</em>) – Write watchpoint</p></li>
+<li><p><strong>read</strong> (<em>bool</em>) – Read watchpoint</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.shutdown">
+<span class="sig-name descname"><span class="pre">shutdown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.shutdown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shutdowns the target</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.step">
+<span class="sig-name descname"><span class="pre">step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blocking</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Steps one instruction.
+:param blocking: if True, block until the target is STOPPED again</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blocking</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.stop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.update_state">
+<span class="sig-name descname"><span class="pre">update_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.update_state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.wait">
+<span class="sig-name descname"><span class="pre">wait</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">36</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.wait" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.wm">
+<span class="sig-name descname"><span class="pre">wm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.wm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writing to memory of the target</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>address</strong> – The address from where the memory-write should 
+start</p></li>
+<li><p><strong>size</strong> – The size of the memory write</p></li>
+<li><p><strong>value</strong> – The actual value written to memory</p></li>
+<li><p><strong>num_words</strong> – The amount of words to read</p></li>
+<li><p><strong>raw</strong> – Specifies whether to write in raw or word mode</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True on success else False</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.wr">
+<span class="sig-name descname"><span class="pre">wr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">register</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.wr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writing a register to the target</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>register</strong> – The name of the register</p></li>
+<li><p><strong>value</strong> – The actual value written to the register</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.write_memory">
+<span class="sig-name descname"><span class="pre">write_memory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.write_memory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writing to memory of the target</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>address</strong> – The address from where the memory-write should 
+start</p></li>
+<li><p><strong>size</strong> – The size of the memory write</p></li>
+<li><p><strong>value</strong> – The actual value written to memory</p></li>
+<li><p><strong>num_words</strong> – The amount of words to read</p></li>
+<li><p><strong>raw</strong> – Specifies whether to write in raw or word mode</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True on success else False</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.Target.write_register">
+<span class="sig-name descname"><span class="pre">write_register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">register</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.Target.write_register" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writing a register to the target</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>register</strong> – The name of the register</p></li>
+<li><p><strong>value</strong> – The actual value written to the register</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.targets.target.TargetProtocolStore">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.targets.target.</span></span><span class="sig-name descname"><span class="pre">TargetProtocolStore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">additional_protocols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.TargetProtocolStore" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class stores the various protocols associated to one target</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="avatar2.targets.target.TargetProtocolStore.DEFAULT_PROTOCOLS">
+<span class="sig-name descname"><span class="pre">DEFAULT_PROTOCOLS</span></span><em class="property"> <span class="pre">=</span> <span class="pre">['memory',</span> <span class="pre">'registers',</span> <span class="pre">'execution']</span></em><a class="headerlink" href="#avatar2.targets.target.TargetProtocolStore.DEFAULT_PROTOCOLS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.TargetProtocolStore.set_all">
+<span class="sig-name descname"><span class="pre">set_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">only_defaults</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.TargetProtocolStore.set_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets an instantiated protocol object for either all protocols in this
+store, or only the default ones
+:param instance: the protocol instance</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.targets.target.TargetProtocolStore.shutdown">
+<span class="sig-name descname"><span class="pre">shutdown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.TargetProtocolStore.shutdown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shutsdown all the associated protocols</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.targets.target.TargetRegs">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.targets.target.</span></span><span class="sig-name descname"><span class="pre">TargetRegs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">register_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.TargetRegs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.targets.target.TargetStates">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.targets.target.</span></span><span class="sig-name descname"><span class="pre">TargetStates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.TargetStates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></p>
+<p>A simple Enum for the different states a target can be in.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="avatar2.targets.target.TargetStates.BREAKPOINT">
+<span class="sig-name descname"><span class="pre">BREAKPOINT</span></span><em class="property"> <span class="pre">=</span> <span class="pre">20</span></em><a class="headerlink" href="#avatar2.targets.target.TargetStates.BREAKPOINT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="avatar2.targets.target.TargetStates.CREATED">
+<span class="sig-name descname"><span class="pre">CREATED</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#avatar2.targets.target.TargetStates.CREATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="avatar2.targets.target.TargetStates.EXITED">
+<span class="sig-name descname"><span class="pre">EXITED</span></span><em class="property"> <span class="pre">=</span> <span class="pre">32</span></em><a class="headerlink" href="#avatar2.targets.target.TargetStates.EXITED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="avatar2.targets.target.TargetStates.INITIALIZED">
+<span class="sig-name descname"><span class="pre">INITIALIZED</span></span><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#avatar2.targets.target.TargetStates.INITIALIZED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="avatar2.targets.target.TargetStates.NOT_RUNNING">
+<span class="sig-name descname"><span class="pre">NOT_RUNNING</span></span><em class="property"> <span class="pre">=</span> <span class="pre">6</span></em><a class="headerlink" href="#avatar2.targets.target.TargetStates.NOT_RUNNING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="avatar2.targets.target.TargetStates.RUNNING">
+<span class="sig-name descname"><span class="pre">RUNNING</span></span><em class="property"> <span class="pre">=</span> <span class="pre">8</span></em><a class="headerlink" href="#avatar2.targets.target.TargetStates.RUNNING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="avatar2.targets.target.TargetStates.STOPPED">
+<span class="sig-name descname"><span class="pre">STOPPED</span></span><em class="property"> <span class="pre">=</span> <span class="pre">4</span></em><a class="headerlink" href="#avatar2.targets.target.TargetStates.STOPPED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="avatar2.targets.target.TargetStates.SYNCING">
+<span class="sig-name descname"><span class="pre">SYNCING</span></span><em class="property"> <span class="pre">=</span> <span class="pre">16</span></em><a class="headerlink" href="#avatar2.targets.target.TargetStates.SYNCING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="avatar2.targets.target.action_valid_decorator_factory">
+<span class="sig-prename descclassname"><span class="pre">avatar2.targets.target.</span></span><span class="sig-name descname"><span class="pre">action_valid_decorator_factory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">protocol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.action_valid_decorator_factory" title="Permalink to this definition">¶</a></dt>
+<dd><p>This decorator factory  is used to generate decorators which  verify that
+requested actions on a target, such as step(), stop(), read_register(), 
+write_register() and so on are actually executable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>state</strong> (<em>An entry of the Enum TargetStates</em>) – A mask specifying the required state of the Target</p></li>
+<li><p><strong>protocol</strong> (<em>str</em>) – The protocol required to execute the action.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="avatar2.targets.target.synchronize_state">
+<span class="sig-prename descclassname"><span class="pre">avatar2.targets.target.</span></span><span class="sig-name descname"><span class="pre">synchronize_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">states</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.targets.target.synchronize_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>This decorator can be used to make sure that the target executed a desired
+set of state transitions in an particular order.
+This is useful, when the user explicitly requests the target to change
+it’s state and need an update notification on the transition itself.
+Internally, this works by creating an event and using a watchmen to check
+whether it was triggered.
+:param <a href="#id1"><span class="problematic" id="id2">*</span></a>states: The desired states of the target
+:param transition_optional: Also allow to return if the target is already</p>
+<blockquote>
+<div><p>in the desired states, even if the transition
+didn’t happen</p>
+</div></blockquote>
+</dd></dl>
+
+</div>
+<div class="section" id="module-avatar2.targets">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-avatar2.targets" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="avatar2.protocols.html" class="btn btn-neutral float-left" title="avatar2.protocols package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017, eurecom-s3.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
