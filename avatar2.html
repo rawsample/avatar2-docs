@@ -1,59 +1,58 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>avatar2 package &mdash; avatar² 1.0 documentation</title>
   
 
   
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
   
+  
+
   
   
 
   
 
   
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="avatar² 1.0 documentation" href="index.html"/>
-        <link rel="up" title="avatar2" href="modules.html"/>
-        <link rel="next" title="avatar2.archs package" href="avatar2.archs.html"/>
-        <link rel="prev" title="avatar2" href="modules.html"/> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="avatar2.archs package" href="avatar2.archs.html" />
+    <link rel="prev" title="avatar2" href="modules.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -84,6 +83,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -91,7 +91,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">avatar2</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">avatar2 package</a><ul>
@@ -118,13 +118,14 @@
             
           
         </div>
+        
       </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">avatar²</a>
@@ -132,10 +133,13 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
+
+
 
 
 
@@ -155,7 +159,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="modules.html">avatar2</a> &raquo;</li>
         
@@ -164,7 +168,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/avatar2.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -233,170 +237,208 @@
 </div>
 <div class="section" id="module-avatar2.avatar2">
 <span id="avatar2-avatar2-module"></span><h2>avatar2.avatar2 module<a class="headerlink" href="#module-avatar2.avatar2" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="avatar2.avatar2.Avatar">
-<em class="property">class </em><code class="descclassname">avatar2.avatar2.</code><code class="descname">Avatar</code><span class="sig-paren">(</span><em>arch=&lt;class 'avatar2.archs.arm.ARM'&gt;</em>, <em>endness='little'</em>, <em>output_directory=None</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">threading.Thread</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.avatar2.</span></span><span class="sig-name descname"><span class="pre">Avatar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">arch=&lt;class</span> <span class="pre">'avatar2.archs.arm.ARM'&gt;</span></em>, <em class="sig-param"><span class="pre">cpu_model=None</span></em>, <em class="sig-param"><span class="pre">output_directory=None</span></em>, <em class="sig-param"><span class="pre">log_to_stdout=True</span></em>, <em class="sig-param"><span class="pre">configure_logging=True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">threading.Thread</span></code></p>
 <p>The Avatar-object is the main interface of avatar.
 Here we can set the different targets, and more</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
-<li><strong>arch</strong> &#8211; architecture of all targets</li>
-<li><strong>endness</strong> &#8211; used endianness</li>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>arch</strong> – architecture of all targets</p></li>
+<li><p><strong>endness</strong> – used endianness</p></li>
 </ul>
-</td>
-</tr>
-</tbody>
-</table>
-<dl class="method">
-<dt id="avatar2.avatar2.Avatar.add_memory_range">
-<code class="descname">add_memory_range</code><span class="sig-paren">(</span><em>address</em>, <em>size</em>, <em>name=''</em>, <em>permissions='rwx'</em>, <em>file=None</em>, <em>forwarded=False</em>, <em>forwarded_to=None</em>, <em>emulate=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.add_memory_range" title="Permalink to this definition">¶</a></dt>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.add_memory_range">
+<span class="sig-name descname"><span class="pre">add_memory_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">permissions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'rwx'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_bytes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forwarded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forwarded_to</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emulate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interval_tree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.add_memory_range" title="Permalink to this definition">¶</a></dt>
 <dd><p>Adds a memory range to avatar</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>address</strong> &#8211; Base-Address of the Range</li>
-<li><strong>size</strong> &#8211; Size of the range</li>
-<li><strong>file</strong> &#8211; A file backing this range, if applicable</li>
-<li><strong>forwarded</strong> &#8211; Whether this range should be forwarded</li>
-<li><strong>forwarded_to</strong> &#8211; If forwarded is true, specify the forwarding target</li>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>emulate</strong> – Emulation function that will take name, address and size if set</p></li>
+<li><p><strong>inline</strong> – If set to true, inline the emulation object into targets which support inlining (e.g., QEMU, PANDA).
+NB: This deactivates all callbacks/watchmen on this region.</p></li>
+<li><p><strong>address</strong> – Base-Address of the Range</p></li>
+<li><p><strong>size</strong> – Size of the range</p></li>
+<li><p><strong>file</strong> – A file backing this range, if applicable</p></li>
+<li><p><strong>file_offset</strong> – The offset within the file</p></li>
+<li><p><strong>file_bytes</strong> – Bytes of the file to be copied into memory</p></li>
+<li><p><strong>forwarded</strong> – Whether this range should be forwarded</p></li>
+<li><p><strong>forwarded_to</strong> – If forwarded is true, specify the forwarding target</p></li>
 </ul>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
+<dl class="simple">
+<dt>:param interval_tree:interval_tree this range shall be added to. If None,</dt><dd><p>the range will be added to self.memory_ranges</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>overwrite</strong> – If true, overwrite existing MR if they overlap with the new one</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="avatar2.avatar2.Avatar.add_target">
-<code class="descname">add_target</code><span class="sig-paren">(</span><em>name</em>, <em>backend</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.add_target" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.add_target">
+<span class="sig-name descname"><span class="pre">add_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">backend</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.add_target" title="Permalink to this definition">¶</a></dt>
 <dd><p>Adds a new target to the analyses</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first simple">
-<li><strong>name</strong> &#8211; name of the target</li>
-<li><strong>backend</strong> &#8211; the desired backend. Implemented for now: qemu, gdb</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Kwargs:</th><td class="field-body"><p class="first">those argument will be passed to the target-object itself</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The created TargetObject</p>
-</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><p><strong>backend</strong> – the desired backend. Implemented for now: qemu, gdb</p>
+</dd>
+<dt class="field-even">Kwargs</dt>
+<dd class="field-even"><p>those argument will be passed to the target-object itself</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The created TargetObject</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="avatar2.avatar2.Avatar.get_memory_range">
-<code class="descname">get_memory_range</code><span class="sig-paren">(</span><em>address</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.get_memory_range" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.generate_config">
+<span class="sig-name descname"><span class="pre">generate_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.generate_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a configuration dictionary for storage based on the currently
+defined targets and memory ranges</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.get_memory_range">
+<span class="sig-name descname"><span class="pre">get_memory_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.get_memory_range" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a memory range from an address
-Note: for now just get&#8217;s one range. If there are multiple ranges
-at the same address, this method won&#8217;t work (for now)</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>address</strong> &#8211; the address of the range</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the memory range</td>
-</tr>
-</tbody>
-</table>
+Note: for now just get’s one range. If there are multiple ranges
+at the same address, this method won’t work (for now)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>address</strong> – the address of the range</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the memory range</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="avatar2.avatar2.Avatar.get_status">
-<code class="descname">get_status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.get_status" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.get_status">
+<span class="sig-name descname"><span class="pre">get_status</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.get_status" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="avatar2.avatar2.Avatar.get_target">
-<code class="descname">get_target</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.get_target" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieves a target of the analyses by it&#8217;s name</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> &#8211; The name of the desired target</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The Target!</td>
-</tr>
-</tbody>
-</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.get_target">
+<span class="sig-name descname"><span class="pre">get_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.get_target" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves a target of the analyses by it’s name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – The name of the desired target</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The Target!</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="avatar2.avatar2.Avatar.get_targets">
-<code class="descname">get_targets</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.get_targets" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.get_targets">
+<span class="sig-name descname"><span class="pre">get_targets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.get_targets" title="Permalink to this definition">¶</a></dt>
 <dd><p>A generator for all targets.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="avatar2.avatar2.Avatar.init_targets">
-<code class="descname">init_targets</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.init_targets" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.init_targets">
+<span class="sig-name descname"><span class="pre">init_targets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.init_targets" title="Permalink to this definition">¶</a></dt>
 <dd><p>Inits all created targets</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="avatar2.avatar2.Avatar.load_plugin">
-<code class="descname">load_plugin</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.load_plugin" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.load_config">
+<span class="sig-name descname"><span class="pre">load_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.load_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Populates the avatar object with targets and ranges saved in a config
+json. Note that some changes on the targets may be lost, for instance
+custom protocol configuration.
+:ivar file_name: (Absolute) path to the config file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.load_plugin">
+<span class="sig-name descname"><span class="pre">load_plugin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">local</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.load_plugin" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="avatar2.avatar2.Avatar.run">
-<code class="descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.run" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.run" title="Permalink to this definition">¶</a></dt>
 <dd><p>The code of the Thread managing the asynchronous messages received.
 Default behavior: wait for the priority queue to hold a message and call
 the _async_handler method to process it.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="avatar2.avatar2.Avatar.shutdown">
-<code class="descname">shutdown</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.shutdown" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.save_config">
+<span class="sig-name descname"><span class="pre">save_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.save_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.shutdown">
+<span class="sig-name descname"><span class="pre">shutdown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.shutdown" title="Permalink to this definition">¶</a></dt>
 <dd><p>Shuts down all targets and Avatar. Should be called at end of script
 in order to cleanly exit all spawned processes and threads</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="avatar2.avatar2.Avatar.sigint_wrapper">
-<code class="descname">sigint_wrapper</code><span class="sig-paren">(</span><em>signal</em>, <em>frame</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.sigint_wrapper" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.sigint_wrapper">
+<span class="sig-name descname"><span class="pre">sigint_wrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.sigint_wrapper" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="avatar2.avatar2.Avatar.stop">
-<code class="descname">stop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.stop" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.stop" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stop the thread which manages the asynchronous messages.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="avatar2.avatar2.Avatar.transfer_state">
-<code class="descname">transfer_state</code><span class="sig-paren">(</span><em>from_target</em>, <em>to_target</em>, <em>synch_regs=True</em>, <em>synched_ranges=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.transfer_state" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.Avatar.transfer_state">
+<span class="sig-name descname"><span class="pre">transfer_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync_regs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synced_ranges</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.Avatar.transfer_state" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transfers the state from one target to another one</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>from_target</strong> (<a class="reference internal" href="avatar2.targets.html#avatar2.targets.target.Target" title="avatar2.targets.target.Target"><em>Target</em></a><em>(</em><em></em><em>)</em><em></em>) &#8211; the source target</li>
-<li><strong>to_target</strong> (<a class="reference internal" href="avatar2.targets.html#avatar2.targets.target.Target" title="avatar2.targets.target.Target"><em>Target</em></a><em>(</em><em></em><em>)</em><em></em>) &#8211; the destination target</li>
-<li><strong>synch_regs</strong> (<em>bool</em>) &#8211; Whether registers should be synched</li>
-<li><strong>synched_ranges</strong> (<em>list</em>) &#8211; The memory ranges whose contents should be 
-transfered</li>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>from_target</strong> (<a class="reference internal" href="avatar2.targets.html#avatar2.targets.target.Target" title="avatar2.targets.target.Target"><em>Target</em></a><em>(</em><em>)</em>) – the source target</p></li>
+<li><p><strong>to_target</strong> (<a class="reference internal" href="avatar2.targets.html#avatar2.targets.target.Target" title="avatar2.targets.target.Target"><em>Target</em></a><em>(</em><em>)</em>) – the destination target</p></li>
+<li><p><strong>sync_regs</strong> (<em>bool</em>) – Whether registers should be synced</p></li>
+<li><p><strong>synced_ranges</strong> (<em>list</em>) – The memory ranges whose contents should be
+transfered</p></li>
 </ul>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.avatar2.AvatarFastQueueProcessor">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.avatar2.</span></span><span class="sig-name descname"><span class="pre">AvatarFastQueueProcessor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">avatar</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.AvatarFastQueueProcessor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">threading.Thread</span></code></p>
+<p>The avatar fast queue handles events which require immediate action,
+i.e. TargetStateUpdates.
+After processing, they get passed to the main avatar queue for further
+handling.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.AvatarFastQueueProcessor.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.AvatarFastQueueProcessor.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method representing the thread’s activity.</p>
+<p>You may override this method in a subclass. The standard run() method
+invokes the callable object passed to the object’s constructor as the
+target argument, if any, with sequential and keyword arguments taken
+from the args and kwargs arguments, respectively.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.avatar2.AvatarFastQueueProcessor.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.avatar2.AvatarFastQueueProcessor.stop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stop the thread which manages the asynchronous messages.</p>
 </dd></dl>
 
 </dd></dl>
@@ -404,118 +446,170 @@ transfered</li>
 </div>
 <div class="section" id="module-avatar2.memory_range">
 <span id="avatar2-memory-range-module"></span><h2>avatar2.memory_range module<a class="headerlink" href="#module-avatar2.memory_range" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="avatar2.memory_range.MemoryRange">
-<em class="property">class </em><code class="descclassname">avatar2.memory_range.</code><code class="descname">MemoryRange</code><span class="sig-paren">(</span><em>address</em>, <em>size</em>, <em>name=''</em>, <em>permissions='rwx'</em>, <em>file=None</em>, <em>forwarded=False</em>, <em>forwarded_to=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.memory_range.MemoryRange" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
-<p>This class represents a MemoryRange which can be mapped in one of Avatar-Targets.
-:ivar address:      The load-address of the memory range
-:ivar size:         The size of the memory range
-:ivar name:         User-defined name for the memory range
-:ivar permissions:  The permisions of the range, represented as textual unix file permission (rwx)
-:ivar file:         A file used for backing the memory range
-:ivar forwarded:    Enable or disable forwarding for this range
-:ivar forwarded_to: List of targets this range should be forwarded to</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.memory_range.MemoryRange">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.memory_range.</span></span><span class="sig-name descname"><span class="pre">MemoryRange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">permissions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'rwx'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_bytes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forwarded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forwarded_to</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_symbolic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_special</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.memory_range.MemoryRange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class represents a MemoryRange which can be mapped in one of
+Avatar-Targets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>address</strong> – The load-address of the memory range</p></li>
+<li><p><strong>size</strong> – The size of the memory range</p></li>
+<li><p><strong>name</strong> – User-defined name for the memory range</p></li>
+<li><p><strong>permissions</strong> – The permisions of the range, represented as textual
+unix file permission (rwx)</p></li>
+<li><p><strong>file</strong> – A file used for backing the memory range</p></li>
+<li><p><strong>file_offset</strong> – The offset within the file</p></li>
+<li><p><strong>file_bytes</strong> – Bytes of the file to be copied into memory</p></li>
+<li><p><strong>forwarded</strong> – Enable or disable forwarding for this range</p></li>
+<li><p><strong>forwarded_to</strong> – List of targets this range should be forwarded to</p></li>
+<li><p><strong>is_symbolic</strong> – Consider this range as symbolic in certain targets</p></li>
+<li><p><strong>is_special</strong> – Whether the range represents special memory which
+behaves unlike normal memory, e.g. MMIO</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.memory_range.MemoryRange.dictify">
+<span class="sig-name descname"><span class="pre">dictify</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.memory_range.MemoryRange.dictify" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the memory range as <em>printable</em> dictionary</p>
+</dd></dl>
+
 </dd></dl>
 
 </div>
 <div class="section" id="module-avatar2.message">
 <span id="avatar2-message-module"></span><h2>avatar2.message module<a class="headerlink" href="#module-avatar2.message" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="avatar2.message.AvatarMessage">
-<em class="property">class </em><code class="descclassname">avatar2.message.</code><code class="descname">AvatarMessage</code><span class="sig-paren">(</span><em>origin</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.message.AvatarMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
-<p>This class provides constants to create and parse the avatar message-dict</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.message.AvatarMessage">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.message.</span></span><span class="sig-name descname"><span class="pre">AvatarMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">origin</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.message.AvatarMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 </dd></dl>
 
-<dl class="class">
-<dt id="avatar2.message.BreakpointHitMessage">
-<em class="property">class </em><code class="descclassname">avatar2.message.</code><code class="descname">BreakpointHitMessage</code><span class="sig-paren">(</span><em>origin</em>, <em>breakpoint_number</em>, <em>address</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.message.BreakpointHitMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#avatar2.message.AvatarMessage" title="avatar2.message.AvatarMessage"><code class="xref py py-class docutils literal"><span class="pre">avatar2.message.AvatarMessage</span></code></a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.message.BreakpointHitMessage">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.message.</span></span><span class="sig-name descname"><span class="pre">BreakpointHitMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">origin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">breakpoint_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.message.BreakpointHitMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#avatar2.message.UpdateStateMessage" title="avatar2.message.UpdateStateMessage"><code class="xref py py-class docutils literal notranslate"><span class="pre">avatar2.message.UpdateStateMessage</span></code></a></p>
 </dd></dl>
 
-<dl class="class">
-<dt id="avatar2.message.RemoteMemoryReadMessage">
-<em class="property">class </em><code class="descclassname">avatar2.message.</code><code class="descname">RemoteMemoryReadMessage</code><span class="sig-paren">(</span><em>origin</em>, <em>id</em>, <em>address</em>, <em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.message.RemoteMemoryReadMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#avatar2.message.AvatarMessage" title="avatar2.message.AvatarMessage"><code class="xref py py-class docutils literal"><span class="pre">avatar2.message.AvatarMessage</span></code></a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.message.RemoteInterruptEnterMessage">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.message.</span></span><span class="sig-name descname"><span class="pre">RemoteInterruptEnterMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">origin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interrupt_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.message.RemoteInterruptEnterMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#avatar2.message.AvatarMessage" title="avatar2.message.AvatarMessage"><code class="xref py py-class docutils literal notranslate"><span class="pre">avatar2.message.AvatarMessage</span></code></a></p>
 </dd></dl>
 
-<dl class="class">
-<dt id="avatar2.message.RemoteMemoryWriteMessage">
-<em class="property">class </em><code class="descclassname">avatar2.message.</code><code class="descname">RemoteMemoryWriteMessage</code><span class="sig-paren">(</span><em>origin</em>, <em>id</em>, <em>address</em>, <em>value</em>, <em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.message.RemoteMemoryWriteMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#avatar2.message.AvatarMessage" title="avatar2.message.AvatarMessage"><code class="xref py py-class docutils literal"><span class="pre">avatar2.message.AvatarMessage</span></code></a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.message.RemoteInterruptExitMessage">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.message.</span></span><span class="sig-name descname"><span class="pre">RemoteInterruptExitMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">origin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transition_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interrupt_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.message.RemoteInterruptExitMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#avatar2.message.AvatarMessage" title="avatar2.message.AvatarMessage"><code class="xref py py-class docutils literal notranslate"><span class="pre">avatar2.message.AvatarMessage</span></code></a></p>
 </dd></dl>
 
-<dl class="class">
-<dt id="avatar2.message.UpdateStateMessage">
-<em class="property">class </em><code class="descclassname">avatar2.message.</code><code class="descname">UpdateStateMessage</code><span class="sig-paren">(</span><em>origin</em>, <em>new_state</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.message.UpdateStateMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#avatar2.message.AvatarMessage" title="avatar2.message.AvatarMessage"><code class="xref py py-class docutils literal"><span class="pre">avatar2.message.AvatarMessage</span></code></a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.message.RemoteMemoryReadMessage">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.message.</span></span><span class="sig-name descname"><span class="pre">RemoteMemoryReadMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">origin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dst</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.message.RemoteMemoryReadMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#avatar2.message.AvatarMessage" title="avatar2.message.AvatarMessage"><code class="xref py py-class docutils literal notranslate"><span class="pre">avatar2.message.AvatarMessage</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.message.RemoteMemoryWriteMessage">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.message.</span></span><span class="sig-name descname"><span class="pre">RemoteMemoryWriteMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">origin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dst</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.message.RemoteMemoryWriteMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#avatar2.message.AvatarMessage" title="avatar2.message.AvatarMessage"><code class="xref py py-class docutils literal notranslate"><span class="pre">avatar2.message.AvatarMessage</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.message.SyscallCatchedMessage">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.message.</span></span><span class="sig-name descname"><span class="pre">SyscallCatchedMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">origin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">breakpoint_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'entry'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.message.SyscallCatchedMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#avatar2.message.BreakpointHitMessage" title="avatar2.message.BreakpointHitMessage"><code class="xref py py-class docutils literal notranslate"><span class="pre">avatar2.message.BreakpointHitMessage</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.message.UpdateStateMessage">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.message.</span></span><span class="sig-name descname"><span class="pre">UpdateStateMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">origin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.message.UpdateStateMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#avatar2.message.AvatarMessage" title="avatar2.message.AvatarMessage"><code class="xref py py-class docutils literal notranslate"><span class="pre">avatar2.message.AvatarMessage</span></code></a></p>
 </dd></dl>
 
 </div>
 <div class="section" id="module-avatar2.watchmen">
 <span id="avatar2-watchmen-module"></span><h2>avatar2.watchmen module<a class="headerlink" href="#module-avatar2.watchmen" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="avatar2.watchmen.WatchedEvent">
-<em class="property">class </em><code class="descclassname">avatar2.watchmen.</code><code class="descname">WatchedEvent</code><span class="sig-paren">(</span><em>type</em>, <em>when</em>, <em>callback</em>, <em>async</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.WatchedEvent" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
-<dl class="method">
-<dt id="avatar2.watchmen.WatchedEvent.react">
-<code class="descname">react</code><span class="sig-paren">(</span><em>avatar</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.WatchedEvent.react" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.watchmen.AsyncReaction">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.watchmen.</span></span><span class="sig-name descname"><span class="pre">AsyncReaction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">avatar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.AsyncReaction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">threading.Thread</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.watchmen.AsyncReaction.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.AsyncReaction.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method representing the thread’s activity.</p>
+<p>You may override this method in a subclass. The standard run() method
+invokes the callable object passed to the object’s constructor as the
+target argument, if any, with sequential and keyword arguments taken
+from the args and kwargs arguments, respectively.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.watchmen.WatchedEvent">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.watchmen.</span></span><span class="sig-name descname"><span class="pre">WatchedEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">watch_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">when</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_async</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite_return</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.WatchedEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.watchmen.WatchedEvent.react">
+<span class="sig-name descname"><span class="pre">react</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">avatar</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.WatchedEvent.react" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="avatar2.watchmen.Watchmen">
-<em class="property">class </em><code class="descclassname">avatar2.watchmen.</code><code class="descname">Watchmen</code><span class="sig-paren">(</span><em>avatar</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.Watchmen" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
-<dl class="method">
-<dt id="avatar2.watchmen.Watchmen.add">
-<code class="descname">add</code><span class="sig-paren">(</span><em>type</em>, <em>when='before'</em>, <em>callback=None</em>, <em>async=False</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.Watchmen.add" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="avatar2.watchmen.Watchmen.add_watch_types">
-<code class="descname">add_watch_types</code><span class="sig-paren">(</span><em>watched_types</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.Watchmen.add_watch_types" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="avatar2.watchmen.Watchmen.add_watchman">
-<code class="descname">add_watchman</code><span class="sig-paren">(</span><em>type</em>, <em>when='before'</em>, <em>callback=None</em>, <em>async=False</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.Watchmen.add_watchman" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="avatar2.watchmen.Watchmen.remove_watchman">
-<code class="descname">remove_watchman</code><span class="sig-paren">(</span><em>type</em>, <em>watchman</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.Watchmen.remove_watchman" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="avatar2.watchmen.Watchmen.t">
-<code class="descname">t</code><span class="sig-paren">(</span><em>type</em>, <em>when</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.Watchmen.t" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="avatar2.watchmen.Watchmen.trigger">
-<code class="descname">trigger</code><span class="sig-paren">(</span><em>type</em>, <em>when</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.Watchmen.trigger" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.watchmen.WatchedTypes">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.watchmen.</span></span><span class="sig-name descname"><span class="pre">WatchedTypes</span></span><a class="headerlink" href="#avatar2.watchmen.WatchedTypes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="avatar2.watchmen.WatchedTypes.watched_types">
+<span class="sig-name descname"><span class="pre">watched_types</span></span><em class="property"> <span class="pre">=</span> <span class="pre">['StateTransfer',</span> <span class="pre">'BreakpointHit',</span> <span class="pre">'UpdateState',</span> <span class="pre">'SyscallCatched',</span> <span class="pre">'RemoteMemoryRead',</span> <span class="pre">'RemoteMemoryWrite',</span> <span class="pre">'RemoteInterruptEnter',</span> <span class="pre">'RemoteInterruptExit',</span> <span class="pre">'AvatarGetStatus',</span> <span class="pre">'AddTarget',</span> <span class="pre">'TargetInit',</span> <span class="pre">'TargetShutdown',</span> <span class="pre">'TargetCont',</span> <span class="pre">'TargetStop',</span> <span class="pre">'TargetStep',</span> <span class="pre">'TargetGetSymbol',</span> <span class="pre">'TargetWriteMemory',</span> <span class="pre">'TargetReadMemory',</span> <span class="pre">'TargetRegisterWrite',</span> <span class="pre">'TargetRegisterRead',</span> <span class="pre">'TargetSetBreakpoint',</span> <span class="pre">'TargetSetWatchPoint',</span> <span class="pre">'TargetRemovebreakpoint',</span> <span class="pre">'TargetWait',</span> <span class="pre">'TargetSetFile',</span> <span class="pre">'TargetDownload',</span> <span class="pre">'TargetInjectInterrupt']</span></em><a class="headerlink" href="#avatar2.watchmen.WatchedTypes.watched_types" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="avatar2.watchmen.asyncReaction">
-<em class="property">class </em><code class="descclassname">avatar2.watchmen.</code><code class="descname">asyncReaction</code><span class="sig-paren">(</span><em>avatar</em>, <em>callback</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.asyncReaction" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">threading.Thread</span></code></p>
-<dl class="method">
-<dt id="avatar2.watchmen.asyncReaction.run">
-<code class="descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.asyncReaction.run" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="avatar2.watchmen.Watchmen">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">avatar2.watchmen.</span></span><span class="sig-name descname"><span class="pre">Watchmen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">avatar</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.Watchmen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.watchmen.Watchmen.add">
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">watch_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">when</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'before'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_async</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite_return</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.Watchmen.add" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.watchmen.Watchmen.add_watch_types">
+<span class="sig-name descname"><span class="pre">add_watch_types</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">watched_types</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.Watchmen.add_watch_types" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.watchmen.Watchmen.add_watchman">
+<span class="sig-name descname"><span class="pre">add_watchman</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">watch_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">when</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'before'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_async</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite_return</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.Watchmen.add_watchman" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.watchmen.Watchmen.remove_watchman">
+<span class="sig-name descname"><span class="pre">remove_watchman</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">watch_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">watchman</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.Watchmen.remove_watchman" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.watchmen.Watchmen.t">
+<span class="sig-name descname"><span class="pre">t</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">watch_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">when</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.Watchmen.t" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="avatar2.watchmen.Watchmen.trigger">
+<span class="sig-name descname"><span class="pre">trigger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">watch_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">when</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.Watchmen.trigger" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="function">
-<dt id="avatar2.watchmen.watch">
-<code class="descclassname">avatar2.watchmen.</code><code class="descname">watch</code><span class="sig-paren">(</span><em>watched_type</em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.watch" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="avatar2.watchmen.watch">
+<span class="sig-prename descclassname"><span class="pre">avatar2.watchmen.</span></span><span class="sig-name descname"><span class="pre">watch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">watched_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#avatar2.watchmen.watch" title="Permalink to this definition">¶</a></dt>
 <dd><p>Decorator for the watchmen system</p>
 </dd></dl>
 
@@ -527,34 +621,32 @@ transfered</li>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="avatar2.archs.html" class="btn btn-neutral float-right" title="avatar2.archs package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="modules.html" class="btn btn-neutral" title="avatar2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="avatar2.archs.html" class="btn btn-neutral float-right" title="avatar2.archs package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="modules.html" class="btn btn-neutral float-left" title="avatar2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, eurecom-s3.
+        &#169; Copyright 2017, eurecom-s3.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -563,37 +655,15 @@ transfered</li>
   </div>
   
 
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'1.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
    
 
 </body>
